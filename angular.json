@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "app-avm-widget": {
+      "projectType": "library",
+      "root": "projects/app-avm-widget",
+      "sourceRoot": "projects/app-avm-widget/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/app-avm-widget/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/app-avm-widget/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/app-avm-widget/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/app-avm-widget/src/test.ts",
+            "tsConfig": "projects/app-avm-widget/tsconfig.spec.json",
+            "karmaConfig": "projects/app-avm-widget/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "app-avm-widget"
+}
