@@ -14,6 +14,15 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "shopprop-avm": [
+        "dist/shopprop-avm/shopprop-avm",
+        "dist/shopprop-avm"
+      ],
+      "shopprop-avm/*": [
+        "dist/shopprop-avm/*"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
