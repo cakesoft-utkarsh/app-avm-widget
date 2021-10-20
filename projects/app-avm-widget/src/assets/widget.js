@@ -1,6 +1,6 @@
 var rprAvmWidgetOptions = {
-  Token: "8E341247-6C56-471E-9E34-DFA842598976",
-  Query: "405 Blumont St, Laguna Beach, CA 92651",
+  Token: "-",
+  Query: "-",
   CoBrandCode: "btsshopprop",
   ShowRprLinks: true,
 
